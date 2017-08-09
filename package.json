@@ -1,0 +1,19 @@
+{
+  "name": "language-clingo",
+  "version": "0.0.0",
+  "description": "Simple syntax highlighting for Answer Set Programming (ASP) using gringo, clasp or clingo.",
+  "keywords": [
+    "ASP",
+    "Syntax",
+    "Grammar",
+    "Clingo",
+    "Gringo",
+    "Clasp"
+  ],
+  "repository": "",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {}
+}

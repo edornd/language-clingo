@@ -1,0 +1,76 @@
+'scopeName': 'source.asp'
+'name': 'ASP'
+'fileTypes': ['lp', 'cl']
+
+'patterns': [
+  #comments, starting with % or %* for enclosed
+  {
+    'begin': '%\\*'
+    'end': '\\*%'
+    'name': 'comment.clingo'
+  },
+  {
+    'begin': '%'
+    'end': '\\n'
+    'name': 'comment.clingo'
+  },
+  # constants and keywords (e.g. not, #show)
+  {
+    'match': '\\bnot\\b'
+    'name': 'keyword.language.clingo'
+  },
+  # operator-like tokens (e.g. '.' , '..', ':-')
+  {
+    'match': '\\.\\.'
+    'name': 'keyword.operator.clingo'
+  },
+  {
+    'match': '\\;'
+    'name': 'keyword.operator.clingo'
+  },
+  {
+    'match': ':-'
+    'name': 'keyword.operator.clingo'
+  },
+  {
+    'match': '\\s\\:\\s'
+    'name': 'keyword.operator.clingo'
+  },
+  {
+    'match': '\\s\\:\\=\\s'
+    'name': 'keyword.operator.clingo'
+  },
+  {
+    'match': '\\.'
+    'name': 'keyword.control.clingo'
+  },
+  {
+    'match': '\\s-'
+    'name': 'keyword.operator.clingo'
+  },
+  {
+    'match': '\\{|\\}'
+    'name': 'keyword.other.clingo'
+  },
+  {
+    'match': '#(count|even|odd|max|min|sum|maximize|minimize|show|showsig|sup|inf|true|false|forget|external|cumulative|disjoint|const|base|include|program|hide)\\b'
+    'name': 'keyword.function.clingo'
+  }
+  # constant values, predicates, atoms
+  {
+    'match': '[_]*[A-Z][A-Za-z0-9]*'
+    'name': 'variable.parameter.clingo'
+  },
+  {
+    'match': '\\b(0|[1-9])[0-9]*\\b'
+    'name': 'constant.numeric.clingo'
+  },
+  {
+    'match': '[_]*[a-z][A-Za-z0-9]*(?![(])\\b'
+    'name': 'constant.character.clingo'
+  },
+  {
+    'match': '\\b[_]*[a-z][A-Za-z0-9]*(?=[(])\\b'
+    'name': 'entity.name.function.declaration.clingo'
+  }
+]
