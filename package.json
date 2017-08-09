@@ -10,7 +10,13 @@
     "Gringo",
     "Clasp"
   ],
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theIedU/language-clingo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/theIedU/language-clingo/issues"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
