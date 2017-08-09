@@ -66,11 +66,11 @@
     'name': 'constant.numeric.clingo'
   },
   {
-    'match': '[_]*[a-z][A-Za-z0-9]*(?![(])\\b'
+    'match': '[_]*[a-z][A-Za-z0-9_]*(?![(])\\b'
     'name': 'constant.character.clingo'
   },
   {
-    'match': '\\b[_]*[a-z][A-Za-z0-9]*(?=[(])\\b'
+    'match': '\\b[_]*[a-z][A-Za-z0-9_]*(?=[(])\\b'
     'name': 'entity.name.function.declaration.clingo'
   }
 ]
