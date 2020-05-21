@@ -1,0 +1,4 @@
+'.source.asp':
+  'editor':
+    'commentStart': '% '
+    'increaseIndentPattern': '(:-)\\s*$'
