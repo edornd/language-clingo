@@ -33,6 +33,10 @@
     'name': 'keyword.operator.clingo'
   },
   {
+    'match': ':~'
+    'name': 'keyword.operator.clingo'
+  },
+  {
     'match': '\\s\\:\\s'
     'name': 'keyword.operator.clingo'
   },
